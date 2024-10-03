@@ -1,0 +1,30 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+$bg-color: #F6F6F6;
+$primary-color: #F29602;
+
+.bg-color {
+    background-color: $bg-color;
+}
+
+.sign-in-card {
+    padding: 24px 36px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 25vh;
+    width: 500px;
+    box-shadow: $box-shadow;
+    border-radius: 12px;
+}
+
+.btn-login {
+    width: 100%;
+    background-color: $primary-color;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-login:hover{
+    background-color: #c57900;
+    color: #fff;
+}
