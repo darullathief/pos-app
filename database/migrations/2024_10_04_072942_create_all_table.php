@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            $table->string('public_id');
             $table->string('name');
             $table->decimal('price', 10, 2);
             $table->timestamps();
@@ -20,6 +21,7 @@ return new class extends Migration
         
         Schema::create('inventories', function (Blueprint $table) {
             $table->id();
+            $table->string('public_id');
             $table->integer('quantity');
             $table->integer('inventory_lock');
             $table->foreignId('product_id')->constrained();
@@ -36,6 +38,7 @@ return new class extends Migration
 
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->string('public_id');
             $table->foreignId('customer_id')->constrained();
             $table->timestamps();
         });

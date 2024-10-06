@@ -14,7 +14,7 @@ class Product extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'price'];
+    protected $fillable = ['public_id', 'name', 'price'];
 
     public function discounts() : HasMany
     {
